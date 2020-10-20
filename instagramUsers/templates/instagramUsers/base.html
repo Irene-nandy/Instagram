@@ -1,0 +1,54 @@
+<!-- {% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{% static 'instagramUsers/styles.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+
+    {% if title %}
+        <title>Instagram - {{ title }}</title>
+    {% else %}
+        <title>Instagram</title>
+    {% endif %}
+</head>
+<body>
+    <div class="main" style="background-image: url('https://wallpaperaccess.com/full/274084.png');background-size: cover;background-repeat: no-repeat;">
+    <main role="main" class="container">
+
+        <h1 class="text-center mt-5 text-danger" style="font-family: 'Sans serif', cursive;"><span><img src="{% static 'image/instalogo.png' %}" width="30" height="30" class="d-inline-block align-top" alt=""></span> Instagram</h1>
+
+        <div class="row mt-5">
+            <div class="col-md-8 ">
+                {% if messages %}
+                    {% for message in messages %}
+                    <div class="alert alert-{{ message.tags }}">{{ message }}</div>
+                    {% endfor %}
+                {% endif %}
+            {% block content %}{% endblock %}
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        Create an account or log in to Instagram - A simple, fun & creative way to capture, edit & share photos, videos & messages with friends & family.
+                    </div>
+                  </div>
+            </div>
+        </div>
+          
+    </main>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</div>
+</html> -->
