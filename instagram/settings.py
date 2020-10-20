@@ -15,7 +15,7 @@ import dj_database_url
 from decouple import config,Csv
 
 MODE=config("MODE", default="prod")
-SECRET_KEY = config('6mll93st)dibe^4a%g43_+tpz84vi*%q**mtksw_kh5p3m0j@b')
+SECRET_KEY = config('SECRET_KEY')
 DEBUG = config('DEBUG', default=False, cast=bool)
 # development
 if config('MODE')=="dev":
