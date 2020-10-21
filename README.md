@@ -27,6 +27,7 @@ Users can sign up, login, view and post photos, search and follow other users.
 # Technologies used
 *  Python
 *  Django
+*LIVE LINK=>https://instagram-irene01.herokuapp.com/
 
 # Contact Information
 * irenekasiva75@gmail.com
